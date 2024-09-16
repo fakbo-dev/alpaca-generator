@@ -4,3 +4,11 @@ Randomize feature
 Download generated image feature
 
 
+Create an alpaca (image) preview UI
+Add list of buttons for customizing your alpaca (image)
+Add randomized alpaca feature
+
+
+
+<!-- starting the proyect -->
+
