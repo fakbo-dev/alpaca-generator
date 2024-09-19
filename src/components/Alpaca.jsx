@@ -7,6 +7,7 @@ import leg from "../assets/alpaca/leg/bubble-tea.png"
 import mount from "../assets/alpaca/mouth/astonished.png"
 import neck from "../assets/alpaca/neck/bend-backward.png"
 import nose from "../assets/alpaca/nose.png"
+import { alpacaData } from "../components/db/data"
 const Alpaca = () => {
 
     return (
@@ -28,23 +29,16 @@ const Alpaca = () => {
                 </div>
 
                 {/* Buttons */}
-                <div className="flex flex-col">
+                <div className="flex flex-col ">
                     {/* Accesories */}
                     <div className=" flex  gap-2 flex-col">
-                        <h2 className="self-center">Accesories Alpacas</h2>
+                        <h2 className="self-center">Accesorize the Alpaca's</h2>
                         {/* buttons */}
-                        <div className="flex flex-wrap gap-3">
+                        <div className="grid grid-cols-2 grid-rows-4 gap-3">
+                            {alpacaData.map(({ name }, i) => (
+                                <button key={i} className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">{name}</button>
+                            ))}
 
-                            <button className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">pog</button>
-                            <button className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">pog</button>
-                            <button className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">pog</button>
-                            <button className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">pog</button>
-                            <button className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">pog</button>
-                            <button className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">pog</button>
-                            <button className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">pog</button>
-                            <button className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">pog</button>
-                            <button className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">pog</button>
-                            <button className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">pog</button>
                         </div>
                     </div>
                     {/* Styles */}
