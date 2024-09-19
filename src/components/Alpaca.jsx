@@ -53,7 +53,15 @@ const Alpaca = () => {
                         <h2 className="self-center">Styles</h2>
                         {/* buttons */}
                         <div className="flex flex-wrap gap-3">
-
+                            {alpacaData
+                                .filter((category) => category.name === current)
+                                .map((category) =>
+                                    category.styles.map((style, i) => (
+                                        <button key={i} className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
+                                            {style.title}
+                                        </button>
+                                    ))
+                                )}
                         </div>
 
                     </div>
