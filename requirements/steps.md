@@ -12,3 +12,5 @@ Add randomized alpaca feature
 
 <!-- starting the proyect -->
 
+1. Como renderizar los accessorios
+2. usar dinamic path
