@@ -3,6 +3,17 @@ import Buttons from "./Buttons"
 import { useState } from "react";
 
 
+// Default Img
+import accessoriesImg from "../assets/alpaca/accessories/earings.png";
+import bgImg from "../assets/alpaca/backgrounds/blue50.png";
+import earsImg from "../assets/alpaca/ears/default.png";
+import eyesImg from "../assets/alpaca/eyes/default.png";
+import hairImg from "../assets/alpaca/hair/default.png";
+import legImg from "../assets/alpaca/leg/default.png";
+import mouthImg from "../assets/alpaca/mouth/default.png";
+import neckImg from "../assets/alpaca/neck/default.png";
+import noseImg from "../assets/alpaca/nose.png";
+
 const Alpaca = () => {
     const [currentBtn, setCurrentBtn] = useState("background");
     const handleClick = (e) => {
@@ -17,7 +28,15 @@ const Alpaca = () => {
 
                 {/* Image */}
                 <div className="relative flex justify-center items-center">
-                    <img src={Assets.background.blue50} alt="bg-image" className="h-[420px] w-[420px] z-0" />
+                    <img src={bgImg} alt="bg-image" className="h-[420px] w-[420px] z-0" />
+                    <img src={earsImg} alt="bg-image" className="h-[420px] w-[420px] z-0 absolute top-0 left-0" />
+                    <img src={eyesImg} alt="bg-image" className="h-[420px] w-[420px] z-[99] absolute top-0 left-0" />
+                    <img src={hairImg} alt="bg-image" className="h-[420px] w-[420px] z-[0] absolute top-0 left-0" />
+                    <img src={accessoriesImg} alt="bg-image" className="h-[420px] w-[420px] z-0 absolute top-0 left-0" />
+                    <img src={legImg} alt="bg-image" className="h-[420px] w-[420px] z-0 absolute top-0 left-0" />
+                    <img src={mouthImg} alt="bg-image" className="h-[420px] w-[420px] z-[99] absolute top-0 left-0" />
+                    <img src={neckImg} alt="bg-image" className="h-[420px] w-[420px] z-1 absolute top-0 left-0" />
+                    <img src={noseImg} alt="bg-image" className="h-[420px] w-[420px] z-0 absolute top-0 left-0" />
                 </div>
 
                 {/* Buttons */}
