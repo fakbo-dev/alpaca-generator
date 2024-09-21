@@ -19,6 +19,18 @@ const Alpaca = () => {
     const handleClick = (e) => {
         setCurrentBtn(e.target.id)
     }
+
+    const dataImg = {
+        accessories: useState(accessoriesImg),
+        background: useState(bgImg),
+        ears: useState(earsImg),
+        eyes: useState(eyesImg),
+        hair: useState(hairImg),
+        leg: useState(legImg),
+        mouth: useState(mouthImg),
+        neck: useState(neckImg),
+        nose: useState(noseImg),
+    };
     return (
         <section className="flex flex-col gap-10">
             <h1 className="text-6xl">Alpaca Generator</h1>
@@ -28,15 +40,15 @@ const Alpaca = () => {
 
                 {/* Image */}
                 <div className="relative flex justify-center items-center">
-                    <img src={bgImg} alt="bg-image" className="h-[420px] w-[420px] z-0" />
-                    <img src={earsImg} alt="bg-image" className="h-[420px] w-[420px] z-0 absolute top-0 left-0" />
-                    <img src={eyesImg} alt="bg-image" className="h-[420px] w-[420px] z-[99] absolute top-0 left-0" />
-                    <img src={hairImg} alt="bg-image" className="h-[420px] w-[420px] z-[0] absolute top-0 left-0" />
-                    <img src={accessoriesImg} alt="bg-image" className="h-[420px] w-[420px] z-0 absolute top-0 left-0" />
-                    <img src={legImg} alt="bg-image" className="h-[420px] w-[420px] z-0 absolute top-0 left-0" />
-                    <img src={mouthImg} alt="bg-image" className="h-[420px] w-[420px] z-[99] absolute top-0 left-0" />
-                    <img src={neckImg} alt="bg-image" className="h-[420px] w-[420px] z-1 absolute top-0 left-0" />
-                    <img src={noseImg} alt="bg-image" className="h-[420px] w-[420px] z-0 absolute top-0 left-0" />
+                    <img src={dataImg.background[0]} alt="bg-image" className="h-[420px] w-[420px] z-0" />
+                    <img src={dataImg.ears[0]} alt="bg-image" className="h-[420px] w-[420px] z-0 absolute top-0 left-0" />
+                    <img src={dataImg.eyes[0]} alt="bg-image" className="h-[420px] w-[420px] z-[99] absolute top-0 left-0" />
+                    <img src={dataImg.hair[0]} alt="bg-image" className="h-[420px] w-[420px] z-[0] absolute top-0 left-0" />
+                    <img src={dataImg.accessories[0]} alt="bg-image" className="h-[420px] w-[420px] z-0 absolute top-0 left-0" />
+                    <img src={dataImg.leg[0]} alt="bg-image" className="h-[420px] w-[420px] z-0 absolute top-0 left-0" />
+                    <img src={dataImg.mouth[0]} alt="bg-image" className="h-[420px] w-[420px] z-[99] absolute top-0 left-0" />
+                    <img src={dataImg.neck[0]} alt="bg-image" className="h-[420px] w-[420px] z-1 absolute top-0 left-0" />
+                    <img src={dataImg.nose[0]} alt="bg-image" className="h-[420px] w-[420px] z-0 absolute top-0 left-0" />
                 </div>
 
                 {/* Buttons */}
@@ -60,7 +72,7 @@ const Alpaca = () => {
                         {/* Buttons */}
                         <div className="grid grid-cols-3 grid-rows-3 gap-3">
                             {Object.keys(Assets[currentBtn] || {}).map((key, i) => (
-                                <Buttons key={i}>
+                                <Buttons key={i} value={Assets[currentBtn][key]} id={key} identity={currentBtn}>
                                     {key.toUpperCase()}
                                 </Buttons>
                             ))}
