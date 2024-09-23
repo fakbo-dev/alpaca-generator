@@ -1,7 +1,7 @@
 import Assets from "./db/Assets"
 import Buttons from "./Buttons"
 import { useState } from "react";
-
+import { customizeImg } from "../functions"
 
 // Default Img
 import accessoriesImg from "../assets/alpaca/accessories/earings.png";
@@ -31,6 +31,13 @@ const Alpaca = () => {
         neck: useState(neckImg),
         nose: useState(noseImg),
     };
+
+
+    const getImage = () => {
+        const sliced = dataImg.split("/");
+        console.log(sliced);
+    }
+
     return (
         <section className="flex flex-col gap-10">
             <h1 className="text-6xl">Alpaca Generator</h1>
@@ -72,7 +79,7 @@ const Alpaca = () => {
                         {/* Buttons */}
                         <div className="grid grid-cols-3 grid-rows-3 gap-3">
                             {Object.keys(Assets[currentBtn] || {}).map((key, i) => (
-                                <Buttons key={i} value={Assets[currentBtn][key]} id={key} identity={currentBtn}>
+                                <Buttons key={i} value={Assets[currentBtn][key]} id={key} identity={currentBtn} handleChange={customizeImg(dataImg)}>
                                     {key.toUpperCase()}
                                 </Buttons>
                             ))}
