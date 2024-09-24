@@ -12,8 +12,8 @@ import red50Img from "../../assets/alpaca/backgrounds/red50.png";
 import yellow50Img from "../../assets/alpaca/backgrounds/yellow50.png";
 
 import earsDefaultImg from "../../assets/alpaca/ears/default.png";
-import earsTiltBackwardImg from "../../assets/alpaca/ears/tilt-backward.png";
-import earsTiltForwardImg from "../../assets/alpaca/ears/tilt-forward.png";
+import earsTiltBackwardImg from "../../assets/alpaca/ears/tiltbackward.png";
+import earsTiltForwardImg from "../../assets/alpaca/ears/tiltforward.png";
 
 import eyesDefaultImg from "../../assets/alpaca/eyes/default.png";
 import eyesAngryImg from "../../assets/alpaca/eyes/angry.png";
@@ -31,11 +31,11 @@ import hairQuiffImg from "../../assets/alpaca/hair/quiff.png";
 import hairShortImg from "../../assets/alpaca/hair/short.png";
 
 import legDefaultImg from "../../assets/alpaca/leg/default.png";
-import legBubbleTeaImg from "../../assets/alpaca/leg/bubble-tea.png";
+import legBubbleTeaImg from "../../assets/alpaca/leg/bubbletea.png";
 import legCookieImg from "../../assets/alpaca/leg/cookie.png";
-import legGameConsoleImg from "../../assets/alpaca/leg/game-console.png";
-import legTiltBackwardImg from "../../assets/alpaca/leg/tilt-backward.png";
-import legTiltForwardImg from "../../assets/alpaca/leg/tilt-forward.png";
+import legGameConsoleImg from "../../assets/alpaca/leg/gameconsole.png";
+import legTiltBackwardImg from "../../assets/alpaca/leg/tiltbackward.png";
+import legTiltForwardImg from "../../assets/alpaca/leg/tiltforward.png";
 
 import mouthDefaultImg from "../../assets/alpaca/mouth/default.png";
 import mouthAstonishedImg from "../../assets/alpaca/mouth/astonished.png";
@@ -44,8 +44,8 @@ import mouthLaughImg from "../../assets/alpaca/mouth/laugh.png";
 import mouthTongueImg from "../../assets/alpaca/mouth/tongue.png";
 
 import neckDefaultImg from "../../assets/alpaca/neck/default.png";
-import neckBendBackwardImg from "../../assets/alpaca/neck/bend-backward.png";
-import neckBendForwardImg from "../../assets/alpaca/neck/bend-forward.png";
+import neckBendBackwardImg from "../../assets/alpaca/neck/bendbackward.png";
+import neckBendForwardImg from "../../assets/alpaca/neck/bendforward.png";
 import neckThickImg from "../../assets/alpaca/neck/thick.png";
 
 import noseImg from "../../assets/alpaca/nose.png";
@@ -53,12 +53,12 @@ import noseImg from "../../assets/alpaca/nose.png";
 // Assets object with static imports
 const assets = {
     accessories: {
-        earing: earingImg,
+        earings: earingImg,
         flower: flowerImg,
         glasses: glassesImg,
         headphone: headphoneImg,
     },
-    background: {
+    backgrounds: {
         blue50: blue50Img,
         darkblue50: darkblue50Img,
         green50: green50Img,
@@ -68,8 +68,8 @@ const assets = {
     },
     ears: {
         default: earsDefaultImg,
-        tiltBackward: earsTiltBackwardImg,
-        tiltForward: earsTiltForwardImg,
+        tiltbackward: earsTiltBackwardImg,
+        tiltforward: earsTiltForwardImg,
     },
     eyes: {
         default: eyesDefaultImg,
@@ -90,11 +90,11 @@ const assets = {
     },
     leg: {
         default: legDefaultImg,
-        bubbleTea: legBubbleTeaImg,
+        bubbletea: legBubbleTeaImg,
         cookie: legCookieImg,
-        gameConsole: legGameConsoleImg,
-        tiltBackward: legTiltBackwardImg,
-        tiltForward: legTiltForwardImg,
+        gameconsole: legGameConsoleImg,
+        tiltbackward: legTiltBackwardImg,
+        tiltforward: legTiltForwardImg,
     },
     mouth: {
         default: mouthDefaultImg,
@@ -105,8 +105,8 @@ const assets = {
     },
     neck: {
         default: neckDefaultImg,
-        bendBackward: neckBendBackwardImg,
-        bendForward: neckBendForwardImg,
+        bendbackward: neckBendBackwardImg,
+        bendforward: neckBendForwardImg,
         thick: neckThickImg,
     },
     nose: {
