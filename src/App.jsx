@@ -7,7 +7,7 @@ const App = () => {
       <div className="container mx-auto flex items-center justify-center h-full flex-col">
         {/* Content */}
         <Alpaca />
-        <Donwload />
+
       </div>
     </main>
   )
