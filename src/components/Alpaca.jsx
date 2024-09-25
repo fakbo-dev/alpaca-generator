@@ -33,7 +33,7 @@ const Alpaca = () => {
     const handleUpdate = (e) => {
         setDataImg({
             ...dataImg,
-            [e.target.getAttribute("data-entity")]: Assets[e.target.getAttribute("data-entity")][e.target.value.slice(e.target.value.lastIndexOf("/") + 1, e.target.value.indexOf("."))],
+            [currentBtn]: Assets[currentBtn][e.target.id],
         });
     }
 
