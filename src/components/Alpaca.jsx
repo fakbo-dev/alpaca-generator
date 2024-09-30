@@ -68,7 +68,7 @@ const Alpaca = () => {
                     <div className=" flex gap-2 flex-col">
                         <h2 className="self-center">Accessorize the Alpaca's</h2>
                         {/* Buttons */}
-                        <div className="grid grid-cols-3 grid-rows-3 gap-3">
+                        <div className="grid  grid-cols-2 xl:grid-cols-3 grid-rows-3 gap-3">
                             <BtnMaker location={Assets} className="rounded-full border border-slate-300 py-2 px-4 text-center text-sm transition-all shadow-sm hover:shadow-lg text-white hover:text-white hover:bg-slate-800 hover:border-slate-800 focus:text-white focus:bg-slate-800 focus:border-slate-800 active:border-slate-800 active:text-white active:bg-slate-800 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none text-[8px]  md:text-[10px] xl:text-2xl"
                                 func={changeBtn(setCurrentBtn)}
                             />
@@ -78,7 +78,7 @@ const Alpaca = () => {
                     <div className="flex flex-col gap-2">
                         <h2 className="self-center">Styles</h2>
                         {/* Buttons */}
-                        <div className="grid grid-cols-3 grid-rows-3 gap-3">
+                        <div className="grid grid-cols-2 xl:grid-cols-3 grid-rows-3 gap-3">
                             <BtnMaker location={Assets[currentBtn]} className="rounded-full border border-slate-300 py-2 px-4 text-center text-sm transition-all shadow-sm hover:shadow-lg text-white hover:text-white hover:bg-slate-800 hover:border-slate-800 focus:text-white focus:bg-slate-800 focus:border-slate-800 active:border-slate-800 active:text-white active:bg-slate-800 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none text-[10px] xl:text-2xl"
                                 giveClass={true}
                                 func={handleUpdate}
